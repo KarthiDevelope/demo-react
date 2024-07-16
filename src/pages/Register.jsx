@@ -30,7 +30,6 @@ const Register = () => {
   const navigate = useNavigate();
 
   const handleSubmit = async (values) => {
-    console.log("values", values);
     try {
       await axios.post('https://demo-nodejs-1.onrender.com/api/auth/register', values);
       message.success('User registered successfully.');
@@ -72,7 +71,7 @@ const Register = () => {
           >
             <Input.Password />
           </Form.Item>
-          <p>Already have an account? <Link to="/login">Login</Link></p>
+          <p>Already have an account? <Link to="/">Login</Link></p>
           <Form.Item>
             <Button type="primary" htmlType="submit">Register</Button>
           </Form.Item>

@@ -13,7 +13,7 @@ const DashboardLayout = ({ children }) => {
         <div className="logo" />
         <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
           <Menu.Item key="1" icon={<UnorderedListOutlined />}>
-            <Link to="/">Home</Link>
+            <Link to="/home">Home</Link>
           </Menu.Item>
           <Menu.Item key="2" icon={<BookOutlined />}>
             <Link to="/books">Book List</Link>
@@ -22,7 +22,7 @@ const DashboardLayout = ({ children }) => {
             <Link to="/users">Users List</Link>
           </Menu.Item>
           <Menu.Item key="4" icon={<LoginOutlined />}>
-            <Link to="/login">Login</Link>
+            <Link to="/">Login</Link>
           </Menu.Item>
           <Menu.Item key="5" icon={<UserAddOutlined />}>
             <Link to="/register">Register</Link>

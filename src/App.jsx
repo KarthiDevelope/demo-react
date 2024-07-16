@@ -10,19 +10,19 @@ import UserList from './pages/UserList';
 
 const AppContent = () => {
   const location = useLocation();
-  const isAuthRoute = location.pathname === '/login' || location.pathname === '/register';
+  const isAuthRoute = location.pathname === '/' || location.pathname === '/register';
 
   return (
     <>
       {isAuthRoute ? (
         <Routes>
-          <Route path="/login" element={<Login />} />
+          <Route path="/" element={<Login />} />
           <Route path="/register" element={<Register />} />
         </Routes>
       ) : (
         <DashboardLayout>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />}  />
             <Route path="/books" element={<BookList />} />
             <Route path="/users" element={<UserList />} />
           </Routes>

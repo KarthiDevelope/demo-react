@@ -34,7 +34,7 @@ const Login = () => {
 
       if (response.status === 200) {
         message.success('Logged in successfully.');
-        navigate('/');
+        navigate('/home');
       } else {
         message.error('Login failed. Please try again.');
       }
