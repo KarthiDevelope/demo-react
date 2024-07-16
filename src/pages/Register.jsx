@@ -44,7 +44,7 @@ const Register = () => {
   return (
     <RegisterContainer>
       <RegisterFormContainer>
-        <Title>Register User</Title>
+        <Title>Register</Title>
         <Form
           form={form}
           layout="vertical"

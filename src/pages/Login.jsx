@@ -47,7 +47,7 @@ const Login = () => {
   return (
     <LoginContainer>
       <LoginFormContainer>
-        <Title>Login User</Title>
+        <Title>Login</Title>
         <Form
           layout="vertical"
           onFinish={handleSubmit}
