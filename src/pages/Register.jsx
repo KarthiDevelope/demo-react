@@ -34,7 +34,7 @@ const Register = () => {
       await axios.post('https://demo-nodejs-1.onrender.com/api/auth/register', values);
       message.success('User registered successfully.');
       form.resetFields();
-      navigate("/login");
+      navigate("/");
     } catch (error) {
       console.error('Failed to register user:', error);
       message.error('Failed to register user. Please try again later.');
